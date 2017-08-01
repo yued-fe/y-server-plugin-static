@@ -1,0 +1,23 @@
+{
+  "name": "y-server-static",
+  "version": "0.0.1",
+  "author": "SmadeyZhang",
+  "license": "MIT",
+  "description": "y-server static plugin",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "y-server --config ./test/y-server.config.js --hot"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^0.17.4"
+  },
+  "devDependencies": {
+    "y-server": "git+https://github.com/yued-fe/y-server.git"
+  },
+  "peerDependencies": {
+    "express": "^4.15.3"
+  }
+}

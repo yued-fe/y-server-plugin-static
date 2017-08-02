@@ -20,7 +20,7 @@
     "http-proxy-middleware": "^0.17.4"
   },
   "devDependencies": {
-    "y-server": "git+https://github.com/yued-fe/y-server.git"
+    "y-server": "~0.0.1"
   },
   "peerDependencies": {
     "express": "^4.15.3"

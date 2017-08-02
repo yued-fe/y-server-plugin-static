@@ -68,7 +68,7 @@ function reqUrlFixMiddleware(req, res, next) {
  * @return {Function} 插件安装方法
  */
 module.exports = function (options) {
-  if (!options || !Array.isArray(options.staticPaths)) {
+  if (!options || !options.staticPaths) {
     throw new Error('[y-server-plugin-static]'.red, '"staticPaths"配置错误');
   }
 

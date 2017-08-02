@@ -65,11 +65,11 @@ function reqUrlFixMiddleware(req, res, next) {
  * @param {Object} app Express实例
  * @param {Object} options 配置
  * @param {String|Object} options.staticPaths 静态资源路径配置
-   * 初始化方法
+ * @return {Function} 插件安装方法
  */
 module.exports = function (options) {
-  if (!options) {
-    options = {};
+  if (!options || !Array.isArray(options.staticPaths)) {
+    throw new Error('[y-server-plugin-static]'.red, '"staticPaths"配置错误');
   }
 
   const staticPaths = options.staticPaths;
@@ -77,7 +77,7 @@ module.exports = function (options) {
   const REG_HTTP = /^(http|https):\/\//i;
 
   /**
-   * 初始化方法
+   * 插件安装方法
    * @param {Object} app Express实例
    */
   return function (app) {

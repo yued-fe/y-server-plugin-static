@@ -1,5 +1,5 @@
 {
-  "name": "y-server-static",
+  "name": "y-server-plugin-static",
   "version": "0.0.1",
   "author": "SmadeyZhang",
   "license": "MIT",
@@ -8,10 +8,15 @@
   "files": [
     "index.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yued-fe/y-server-plugin-static.git"
+  },
   "scripts": {
     "test": "y-server --config ./test/y-server.config.js --hot"
   },
   "dependencies": {
+    "colors": "^1.1.2",
     "http-proxy-middleware": "^0.17.4"
   },
   "devDependencies": {

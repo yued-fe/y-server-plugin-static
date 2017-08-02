@@ -1,22 +1,22 @@
-# y-server-static
+# y-server-plugin-static
 
-y-server-static is a [y-server](https://github.com/yued-fe/y-server) plugin to read/proxy static resource.
+y-server-plugin-static is a [y-server](https://github.com/yued-fe/y-server) plugin to read/proxy static resource.
 
 ## Install
 
 ```bash
-npm install y-server-static
+npm install y-server-plugin-static
 ```
 
 ## Usage
 
 ```javascript
-var path = require('path');
+const path = require('path');
 
-var yServer = require('y-server');
-var staticPlugin = require('y-server-static');
+const yServer = require('y-server');
+const staticPlugin = require('y-server-plugin-static');
 
-yServer.run({
+yServer({
   plugins: [
     staticPlugin({
       staticPaths: {

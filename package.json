@@ -21,8 +21,5 @@
   },
   "devDependencies": {
     "y-server": "~0.0.1"
-  },
-  "peerDependencies": {
-    "express": "^4.15.3"
   }
 }
